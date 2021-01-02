@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <SvgBtn>
-        <div className="text">{`User Filters`}</div>
+        <div className="text">{"User\nFilters"}</div>
         <svg
           className="delete-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -39,17 +39,18 @@ const SvgBtn = styled.button`
   align-items: center;
   background: turquoise;
   padding: 1rem;
+  max-width: 4rem;
   border: none;
   border-radius: 4px;
   position: relative;
 
   .text {
     color: white;
-    position: absolute;
-    z-index: 1;
   }
   .delete-icon {
     fill: transparent;
+    position: absolute;
+    z-index: 1;
   }
   .info-icon {
     fill: white;
